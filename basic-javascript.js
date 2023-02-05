@@ -6,4 +6,5 @@ of multiples lies*/
 
 //    console.log("%cHello, World", "color: blue; font-size: 40px");
 
-console.log("Hello " + "there, " + "World")
+// console.log("Hello " + "there, " + "World")
+
