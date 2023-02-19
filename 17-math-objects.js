@@ -27,3 +27,13 @@ console.log(Math.log10(2))
 console.log( Math.sin(180))
 console.log(Math.cos(180))
 console.log(Math.tan(180)) */
+
+//Random integer
+
+// Get a random decimal number between 0 and 0.99...
+// and it to a variable 
+var decimal = Math.random() * 10;
+// Rounding up the value of decimal
+var rounded = Math.ceil(decimal);
+// Log the value of rounded to the console
+console.log(rounded);
