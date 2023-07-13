@@ -8,6 +8,7 @@ import Apples from './components/Apple';
 import Bag from './components/BagStyleJSX';
 import logo from './../src/assets/logo.jpg';
 import Btn from './components/ButtonEvent';
+import DynamicEvents from './components/DynamicEvents';
 /* import Heading from './components/Heading';  */
 
 
@@ -100,6 +101,7 @@ function App() {
 
   return ( 
     <div className="App"> 
+    <DynamicEvents />
     <Btn />
     <Logo />
     <AppCard />
