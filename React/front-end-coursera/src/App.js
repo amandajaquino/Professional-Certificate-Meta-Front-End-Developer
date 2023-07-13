@@ -6,7 +6,10 @@ import Footer from './components/Footer';
 import Pears from './components/Pears';
 import Apples from './components/Apple';
 import Bag from './components/BagStyleJSX';
+import logo from './../src/assets/logo.jpg';
+import Btn from './components/ButtonEvent';
 /* import Heading from './components/Heading';  */
+
 
 function Heading() {
   return (
@@ -62,11 +65,44 @@ function ExpExample2(props) {
     );
 };
 
+function Logo() {
+  const userPic = <img src={logo} height={50} width={50} />
+  return userPic;
+}
+
+function Card(props) {
+  return (
+      <div  className="card" >
+          <h2>
+              {props.h2}
+          </h2>
+          <h3>
+              {props.h3}
+          </h3>
+      </div>
+  )
+}
+
+
+function AppCard() {
+  return (
+    <div>
+      <h1>Task: Add three Card elements</h1>
+      <Card h2="First card's h2" h3="First card's h3"/>
+      <Card h2="Second card's h2" h3="Second card's h3" />
+      <Card h2="Third card's h2" h3="Third card's h3" />
+
+    </div>
+  );
+}
 
 function App() {
 
   return ( 
     <div className="App"> 
+    <Btn />
+    <Logo />
+    <AppCard />
      
         {/* <ExpExample toggleBoolean={!bool} /> */} 
         <ExpExample2 toggleBoolean={!bool} math={2 + 2} str={str1 + " testing"} />
