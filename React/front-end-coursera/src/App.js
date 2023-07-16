@@ -9,6 +9,14 @@ import Bag from './components/BagStyleJSX';
 import logo from './../src/assets/logo.jpg';
 import Btn from './components/ButtonEvent';
 import DynamicEvents from './components/DynamicEvents';
+import Puppy from './components/Puppy';
+import Bowl from './components/Bowl';
+import DateTime from './components/Date';
+import UseStateComp from './components/UseStateInput';
+import UseReducerComp from './components/UseReducerComp';
+import MealsProvider from './components/MealsProvider';
+import MealsList from './components/MealsList';
+import Counter from './components/Counter';
 /* import Heading from './components/Heading';  */
 
 
@@ -97,10 +105,23 @@ function AppCard() {
   );
 }
 
+const date = new Date();
+
 function App() {
 
   return ( 
     <div className="App"> 
+    <Puppy name="Max" bowlShape="square" bowlStatus="full" />
+    <Bowl />
+    <UseStateComp />
+    <UseReducerComp />
+    <div>
+      <MealsProvider>
+          <MealsList />
+          <Counter />
+      </MealsProvider>
+    </div>
+    <DateTime message={date.toLocaleTimeString()} />
     <DynamicEvents />
     <Btn />
     <Logo />
