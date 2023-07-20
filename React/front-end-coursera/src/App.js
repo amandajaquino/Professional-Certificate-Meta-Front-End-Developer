@@ -5,11 +5,13 @@ import Contact from "./components/Contact";
 import AboutLittleLemon from "./components/AboutLittleLemon";
 import { Routes, Route, Link } from "react-router-dom";
 import AssetsClass from "./components/AssetsClass";
+import AudioVideoComp from "./components/AudioVideoComp";
 
 function App() {
   return (
     <div>
     <AssetsClass /> 
+    <AudioVideoComp />
 	  <nav>
       <Link to="/" className="nav-item">Homepage</Link>
       <Link to="/about" className="nav-item">About Little Lemon</Link>
