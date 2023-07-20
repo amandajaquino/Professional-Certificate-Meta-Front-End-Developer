@@ -4,10 +4,12 @@ import Homepage from "./components/Homepage";
 import Contact from "./components/Contact";
 import AboutLittleLemon from "./components/AboutLittleLemon";
 import { Routes, Route, Link } from "react-router-dom";
+import AssetsClass from "./components/AssetsClass";
 
 function App() {
   return (
-    <div> 
+    <div>
+    <AssetsClass /> 
 	  <nav>
       <Link to="/" className="nav-item">Homepage</Link>
       <Link to="/about" className="nav-item">About Little Lemon</Link>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </div>
+
   );
 };
 
