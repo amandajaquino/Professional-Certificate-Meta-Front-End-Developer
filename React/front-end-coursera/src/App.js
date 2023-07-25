@@ -5,13 +5,16 @@ import Contact from "./components/Contact";
 import AboutLittleLemon from "./components/AboutLittleLemon";
 import { Routes, Route, Link } from "react-router-dom";
 import AssetsClass from "./components/AssetsClass";
-import AudioVideoComp from "./components/AudioVideoComp";
+import MapSortFilterComp from "./components/MapSortFilterComp";
+/* import AudioVideoComp from "./components/AudioVideoComp";
+import Calculator from "./components/Calculator"; */
 
 function App() {
   return (
     <div>
-    <AssetsClass /> 
+    {/*
     <AudioVideoComp />
+   <Calculator /> */}
 	  <nav>
       <Link to="/" className="nav-item">Homepage</Link>
       <Link to="/about" className="nav-item">About Little Lemon</Link>
@@ -22,6 +25,8 @@ function App() {
         <Route path="/about" element={<AboutLittleLemon />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
+      <AssetsClass /> 
+      <MapSortFilterComp />
     </div>
 
   );
