@@ -6,6 +6,7 @@ import AboutLittleLemon from "./components/AboutLittleLemon";
 import { Routes, Route, Link } from "react-router-dom";
 import AssetsClass from "./components/AssetsClass";
 import MapSortFilterComp from "./components/MapSortFilterComp";
+import FormComp from "./components/FormComp";
 /* import AudioVideoComp from "./components/AudioVideoComp";
 import Calculator from "./components/Calculator"; */
 
@@ -27,6 +28,7 @@ function App() {
       </Routes>
       <AssetsClass /> 
       <MapSortFilterComp />
+      <FormComp />
     </div>
 
   );
