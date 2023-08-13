@@ -1,4 +1,4 @@
-import './App.css';
+import './App2.css';
 import Intro1 from './components/Intro1';
 import Nav from './components/NavArrowFunction';
 import Promo from './components/Promo';
