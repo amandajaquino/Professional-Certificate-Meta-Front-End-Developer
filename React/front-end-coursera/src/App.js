@@ -7,6 +7,9 @@ import SimpleUseState from "./components/SimpleUseState";
 import GoalFormComplet from "./components/GoalForm";
 import GiftCard from "./components/GiftCard";
 import FetchComp from "./components/FetchComp/FetchComp";
+import HookPersonal from "./components/HookPersonal";
+import CompDynam from "./components/CompDynam/CompDynam";
+import HocCompFinished from "./components/HocComp/HocCompFinished";
 
 const Title = ({ children }) => {
   const { theme } = useTheme();
@@ -121,6 +124,9 @@ function App() {
       <GoalFormComplet />
       <GiftCard />
       <FetchComp />
+      <HookPersonal />
+      <CompDynam />
+      <HocCompFinished />
     </div>
   );
 }
